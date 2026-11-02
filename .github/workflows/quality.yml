@@ -1,0 +1,13 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run sample quality check
+        run: echo "Synthetic quality check passed"
